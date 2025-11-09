@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.venv/
+ENV/
+env/
+venv.bak/
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Logs and temp
+logs/
+*.log
+
+# Data (large or sensitive) - adjust if you want to keep some of these in repo
+data/raw/
+data/embeddings/
+data/*.parquet
+
+# Chroma DB / local DB artifacts
+chroma_db/
+*.sqlite
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python packaging
+dist/
+build/
+*.egg-info/
+
+# Secrets & config
+secrets.toml
+.env
+
+# OS files
+Thumbs.db
