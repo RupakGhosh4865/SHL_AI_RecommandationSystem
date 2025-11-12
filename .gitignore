@@ -1,50 +1,96 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Virtual environments
+# Virtual Environments
 venv/
-.env/
-.venv/
+venv_api/
+venv_frontend/
+venv_minimal/
 ENV/
 env/
-venv.bak/
+.venv
 
-# VSCode
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDEs
 .vscode/
-
-# PyCharm
 .idea/
-
-# macOS
+*.swp
+*.swo
+*~
 .DS_Store
 
-# Logs and temp
+# Logs
 logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Data (large or sensitive) - adjust if you want to keep some of these in repo
-data/raw/
-data/embeddings/
-data/*.parquet
+# Data (except processed)
+data/raw/*.json
+data/raw/*.csv
+data/conversations/
+data/embeddings/*.npy
+data/embeddings/*.pkl
 
-# Chroma DB / local DB artifacts
-chroma_db/
-*.sqlite
-*.db
+# Keep structure folders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/embeddings/.gitkeep
+!data/conversations/.gitkeep
+!data/training_data/.gitkeep
 
-# Jupyter
-.ipynb_checkpoints/
+# Docker
+.dockerignore
+docker-compose.override.yml
 
-# Python packaging
-dist/
-build/
-*.egg-info/
-
-# Secrets & config
-secrets.toml
-.env
-
-# OS files
+# OS
 Thumbs.db
+.DS_Store
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+temp/
+tmp/

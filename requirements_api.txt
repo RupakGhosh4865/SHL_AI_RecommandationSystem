@@ -1,0 +1,29 @@
+# ===================================
+# API Dependencies
+# For FastAPI Backend
+# ===================================
+
+# FastAPI Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+
+
+# Google Gemini (FREE LLM)
+google-generativeai==0.3.2
+
+# Data Processing
+pandas==2.1.1
+numpy==1.24.3
+
+# Environment & Config
+python-dotenv==1.0.0
+
+# Optional: HuggingFace (for embeddings)
+# huggingface-hub==0.19.4
+
+# ===================================
+# Total Size: ~100MB
+# ===================================

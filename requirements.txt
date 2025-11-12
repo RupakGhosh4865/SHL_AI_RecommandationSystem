@@ -25,6 +25,76 @@ regex==2023.10.3
 tqdm==4.66.1
 colorlog==6.7.0
 
+# ===================================
+# FREE RAG System Requirements
+# Using Google Gemini + HuggingFace
+# ===================================
+
+# Core Dependencies (Already installed)
+pandas==2.1.1
+requests==2.31.0
+
+# ===================================
+# FREE Embedding Models (Choose ONE)
+# ===================================
+
+# Option 1: Sentence Transformers (Recommended - Works Offline)
+sentence-transformers==2.2.2
+# Best models (all free & local):
+# - 'all-MiniLM-L6-v2' - Fast, 384 dimensions (RECOMMENDED)
+# - 'all-mpnet-base-v2' - Best quality, 768 dimensions
+# - 'paraphrase-multilingual-MiniLM-L12-v2' - Multilingual
+
+# Option 2: HuggingFace Inference API (Free but needs internet)
+huggingface-hub==0.19.4
+# Free models on HF:
+# - 'sentence-transformers/all-MiniLM-L6-v2'
+# - 'BAAI/bge-small-en-v1.5'
+# - 'intfloat/e5-small-v2'
+
+# ===================================
+# FREE LLM - Google Gemini (BEST CHOICE)
+# ===================================
+google-generativeai==0.3.2
+# Gemini models (all FREE with generous limits):
+# - 'gemini-1.5-flash' - FASTEST, FREE (60 requests/min)
+# - 'gemini-1.5-pro' - Best quality, FREE (2 requests/min)
+# - 'gemini-pro' - Good balance
+
+# Alternative FREE LLMs (if you want options):
+# anthropic==0.8.1  # Claude has free tier (limited)
+# cohere==4.37  # Cohere free tier
+# groq==0.4.1  # Groq (very fast, free)
+
+# ===================================
+# Vector Database
+# ===================================
+chromadb==0.4.18
+
+# ===================================
+# Utilities
+# ===================================
+python-dotenv==1.0.0
+tqdm==4.66.1
+
+# ===================================
+# COST COMPARISON
+# ===================================
+# 
+# Google Gemini 1.5 Flash (FREE TIER):
+# - 15 requests/min (RPM)
+# - 1M tokens/day
+# - 1.5K requests/day
+# - Cost: $0 🎉
+#
+# Sentence Transformers (LOCAL):
+# - Unlimited requests
+# - Works offline
+# - Cost: $0 🎉
+#
+# TOTAL COST: $0/month! 🚀
+# ===================================
+
 # Optional: Advanced Scraping (uncomment if needed)
 # selenium==4.15.0  # For JavaScript-heavy pages
 # cloudscraper==1.2.71  # For Cloudflare bypass
