@@ -5,10 +5,11 @@ services:
     region: oregon
     plan: free
     branch: main
-    buildCommand: pip install -r requirements_api.txt
+    buildCommand: pip install --upgrade pip && pip install -r requirements_api.txt
     startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
     envVars:
-      - key: AIzaSyAT8v3QNeoL8sQqs3lFSa2aeNNz_JJ42oA
+      - key: GOOGLE_API_KEY
+        value: AIzaSyAT8v3QNeoL8sQqs3lFSa2aeNNz_JJ42oA
         sync: false
       - key: ENVIRONMENT
         value: production
