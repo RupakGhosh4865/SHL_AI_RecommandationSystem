@@ -1,26 +1,26 @@
-# # ===================================
-# # API Dependencies (Render Compatible)
-# # ===================================
+# ===================================
+# API Dependencies (Render Compatible)
+# ===================================
 
-# # --- Core Build Tools ---
-# setuptools>=75.1.0
-# wheel>=0.43.0
-# build>=1.2.1
-# pip>=25.0.0
+# --- Core Build Tools ---
+setuptools>=75.1.0
+wheel>=0.43.0
+build>=1.2.1
+pip>=25.0.0
 
-# # --- FastAPI Framework ---
-# fastapi==0.104.1
-# uvicorn[standard]==0.24.0
-# pydantic==2.5.0
-# pydantic-core==2.14.0  # Add specific version
-# pydantic-settings==2.1.0
+# --- FastAPI Framework ---
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-core==2.14.0  # Add specific version
+pydantic-settings==2.1.0
 
-# # --- Google Gemini (LLM) ---
-# google-generativeai==0.3.2
+# --- Google Gemini (LLM) ---
+google-generativeai==0.3.2
 
-# # --- Data Processing ---
-# numpy>=1.26.0
-# pandas>=2.2.0
+# --- Data Processing ---
+numpy>=1.26.0
+pandas>=2.2.0
 
-# # --- Environment & Config ---
-# python-dotenv==1.0.0
+# --- Environment & Config ---
+python-dotenv==1.0.0
