@@ -1,31 +1,28 @@
 # ===================================
-# API Dependencies
-# For FastAPI Backend
+# API Dependencies (Render Compatible)
 # ===================================
 
-# Core build tools (REQUIRED for Render)
-setuptools>=65.0.0
-wheel>=0.38.0
-build
+# --- Core Build Tools ---
+setuptools>=75.1.0
+wheel>=0.43.0
+build>=1.2.1
+pip>=25.0.0
 
-# FastAPI Framework
+# --- FastAPI Framework ---
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 pydantic==2.5.0
 pydantic-settings==2.1.0
 
-# Google Gemini (FREE LLM)
+# --- Google Gemini (LLM) ---
 google-generativeai==0.3.2
 
-# Data Processing
+# --- Data Processing ---
 pandas==2.0.3
 numpy==1.24.3
 
-# Environment & Config
+# --- Environment & Config ---
 python-dotenv==1.0.0
-
-# Optional: HuggingFace (for embeddings)
-# huggingface-hub==0.19.4
 
 # ===================================
 # Total Size: ~100MB
