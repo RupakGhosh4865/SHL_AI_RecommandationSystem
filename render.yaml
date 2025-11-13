@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: shl-assessment-api
+    env: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements_api.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: AIzaSyAT8v3QNeoL8sQqs3lFSa2aeNNz_JJ42oA
+        sync: false
+      - key: ENVIRONMENT
+        value: production
+      - key: PYTHONPATH
+        value: /opt/render/project/src
+      - key: DATA_PATH
+        value: data/processed/shl_catalog_enriched.csv
