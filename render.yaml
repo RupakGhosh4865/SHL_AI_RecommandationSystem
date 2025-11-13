@@ -6,7 +6,7 @@ services:
     plan: free
     branch: main
     buildCommand: pip install --upgrade pip && pip install --prefer-binary -r requirements_api.txt
-    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    startCommand: python -m uvicorn api.main:app --host 0.0.0.0 --port $PORT
     pythonVersion: "3.11.9"
     envVars:
       - key: GOOGLE_API_KEY
