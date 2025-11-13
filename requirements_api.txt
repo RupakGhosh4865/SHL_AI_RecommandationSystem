@@ -3,14 +3,16 @@
 # For FastAPI Backend
 # ===================================
 
+# Core build tools (REQUIRED for Render)
+setuptools>=65.0.0
+wheel>=0.38.0
+build
+
 # FastAPI Framework
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 pydantic==2.5.0
 pydantic-settings==2.1.0
-
-
-
 
 # Google Gemini (FREE LLM)
 google-generativeai==0.3.2
