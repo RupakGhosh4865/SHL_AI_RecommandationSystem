@@ -5,7 +5,7 @@ services:
     region: oregon
     plan: free
     branch: main
-    buildCommand: pip install --upgrade pip && pip install -r requirements_api.txt
+    buildCommand: pip install --upgrade pip && pip install --prefer-binary -r requirements_api.txt
     startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
     pythonVersion: "3.11.9"
     envVars:
@@ -18,3 +18,7 @@ services:
         value: /opt/render/project/src
       - key: DATA_PATH
         value: data/processed/shl_catalog_enriched.csv
+      - key: PIP_PREFER_BINARY
+        value: "1"
+      - key: PIP_NO_BUILD_ISOLATION
+        value: "0"
