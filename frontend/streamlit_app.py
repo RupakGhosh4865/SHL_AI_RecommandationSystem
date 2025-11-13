@@ -50,7 +50,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # API Configuration
-API_URL = os.getenv('API_URL', 'http://localhost:8000')
+API_URL = os.getenv('API_URL', 'https://shl-assessment-api-production-8cd2.up.railway.app/')
 
 # Sidebar
 with st.sidebar:
